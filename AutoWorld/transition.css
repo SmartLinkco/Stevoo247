@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  .block {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    transition: top 0.5s ease; /* Transition for smooth movement */
+    top: 0; /* Initially positioned at the top */
+  }
+  
+  .hidden {
+    display: none; /* Hide the block */
+  }
+  

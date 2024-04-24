@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: ;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+    width: 100%;
+}
+
+.main img {
+    width: 7rem;
+    margin-bottom: -30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+
+
+}
+
+.signup-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.starter {
+    font-size: 40px;
+    padding: 30px 0;
+}
+
+.inputs {
+    display: flex;
+}
+
+.signup {
+    flex: 3;
+    font-size: 13px;
+    margin: 0 10px 0 0;
+}
+
+.signup h2 h3 {
+    font-weight: 300;
+}
+
+.personal {
+    
+}
+
+.form {
+    flex: 9;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, label {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#signin {
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 640px) {
+    .main {
+        margin-top: 190px; 
+    }
+
+    .signup-container {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+    }
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+}

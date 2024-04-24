@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signUp.css">
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+        </div>
+    <div class="signup-container">
+            <div class="starter">
+                <img src="media/favicon.svg" alt="AutoWorld logo">
+                <span>Create an Account</span>
+            </div>
+            <div class="inputs">
+                <div class="signup">
+                    <h2>Account Information</h2>
+                </div>
+                <div class="form">
+                    <form id="signup-form">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                        <input type="text" id="hear-about" placeholder="How did you hear about us?" required>
+                    <hr></hr>
+                        <h2 class="personal">Personal Details</h2>
+                        <input type="text" id="first-name" placeholder="First Name" required>
+                        <input type="text" id="middle-name" placeholder="Middle Name (optional)">
+                        <input type="text" id="last-name" placeholder="Last Name" required>
+                        <input type="date" id="dob" placeholder="Date of Birth" required>
+                        <input type="text" id="address" placeholder="Address" required>
+                    <hr></hr>
+                        <h2 class="vehicle">Vehicle Details</h2>
+                        <input type="text" id="first-name" placeholder="Car Make/Model (Mercedes Benz C300)" required>
+                        <input type="text" id="first-name" placeholder="Car Number (GC 3840 21)" required>
+                        <input type="text" id="first-name" placeholder="Vehicle Color (Gray)" required>
+                    <hr></hr> 
+                        <div style="display: flex; justify-content: center;">
+                            <label for="agree">I agree to the terms and conditions:</label>
+                            <input style="width: 40px; " type="checkbox" id="agree" required>
+                        </div>
+                        <button type="submit">Sign Up</button>   
+                        <div id="signin">
+                            <a href="signin.html">Sign in?</a>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+    </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

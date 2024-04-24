@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoWorld</title>
+    <link rel="stylesheet" href="AutoWorldStyles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-main">
+            <div class="logo">
+                <img src="media/favicon.svg" alt="logo" height="" width="100px">
+                <h1 style="color: #006bb3;">AutoWorld</h1>
+            </div>
+            <div class="portals">
+                <button class="button" onclick="window.location='signup.html'">
+                    <a href="signup.html">Sign Up</a>
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                      <path
+                        clip-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+            </div>
+            <div class="round top">
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <img id="more" width="25px" src="media/more.png" alt="More">
+                </button>
+            </div>
+        </div>
+        <div id="scroll-container">
+            <h5 id="scroll-text">Order Your Mechanic On the Go!</h5>
+        </div>
+    </div>
+    <div class="flex-column">
+        <div class="w-100" style="position: relative;">
+            <div class="sidebar" id="sidebar">
+                <div class="sign-in"><a href="signin.html">Sign in</a></div>
+                <ul>
+                  <li><a href="myrequests.html"><img class="icons" src="media/mechanic.png"> My Requests</a></li>
+                  <li><a href="#"><img class="icons" src="media/promotion.jpg"> Promotions</a></li>
+                  <li><a href="#"><img class="icons" src="media/payments.png"> Payments</a></li>
+                  <li><a href="#"><img class="icons" src="media/services.png"> Services</a></li>
+                  <li><a href="#"><img class="icons" src="media/support.png"> Support</a></li>
+                  <li><a href="#"><img class="icons" src="media/about.png"> About</a></li>
+                </ul>
+              </div>
+            <div class="map">
+                <img id="mapin" src="media/maps.PNG" alt="map">
+            </div>
+            <div class="round down">
+                <img class="" width="30px" src="media/mobileCircle.png" alt="Your Location">
+            </div>
+        </div>
+        <div class="bg-primary w-100 lower-main">
+            <div id="bar-div">
+                <div class="bar"></div>
+            </div>
+            <div style="display: flex;">
+                <button class="animated-button" id="slideButton">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                      ></path>
+                    </svg>
+                    <span class="text">Request a Mechanic</span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                      ></path>
+                    </svg>
+                  </button>
+            </div>
+            <div class="ads">
+                <div class="adverts">
+                    <p>Request a Towing truck</p>
+                    <img src="media/tow.png" alt="Towing truck">
+                </div>
+                <div class="adverts">
+                    <p>Get fuel delivered to you</p>
+                    <img src="media/fuel request.jpg" alt="fuel pump">
+                </div>
+                <div class="adverts">
+                    <p>Service Car at home</p>
+                    <img src="media/servicin.jpg" alt="service van">
+                </div>
+            </div>
+            <div class="recents">
+                <div class="time-icon">
+                    <img src="media/recents.png" alt="recents">
+                </div>
+                <div class="mechanic-info">
+                    <p class="mechanic-name">UBERS AUTO SERVICES</p>
+                    <p class="mechanic-location">Canada Junction, Amamorle</p>
+                </div>
+                <div class="service-type">
+                    <img src="media/mechanic.png" alt="mechanic">
+                </div>
+            </div>
+            <div class="recents">
+                <div class="time-icon">
+                    <img src="media/recents.png" alt="recents">
+                </div>
+                <div class="mechanic-info">
+                    <p class="mechanic-name">StunCust</p>
+                    <p class="mechanic-location">Awoshie</p>
+                </div>
+                <div class="service-type">
+                    <img src="media/mechanic.png" alt="mechanic">
+                </div>
+            </div>
+            <div class="recents">
+                <div class="time-icon">
+                    <img src="media/recents.png" alt="recents">
+                </div>
+                <div class="mechanic-info">
+                    <p class="mechanic-name">GOIL ASHALAGYA BRANCH</p>
+                    <p class="mechanic-location">Ashalagya</p>
+                </div>
+                <div class="service-type">
+                    <img src="media/outoffuel.png" alt="fuel">
+                </div>
+            </div>
+            <div class="recents">
+                <div class="time-icon">
+                    <img src="media/recents.png" alt="recents">
+                </div>
+                <div class="mechanic-info">
+                    <p class="mechanic-name">Ubers Home Car servicing</p>
+                    <p class="mechanic-location">East Legon</p>
+                </div>
+                <div class="service-type">
+                    <img src="media/sevice.png" alt="servicing">
+                </div>
+            </div>
+        </div>
+        <div id="coverDiv" class=" collapsible" id="collapsible">
+            <div class="containerr">
+                <button id="backButton"> Back</button>
+                <h1>Request Details</h1>
+                <div class="options">
+                    <div class="option">
+                        <label for="carMakeModel">Car Make/Model:</label>
+                        <input type="text" id="carMakeModel">
+                    </div>
+                    <div class="option">
+                        <label for="issueCategory">Select the issue category:</label>
+                            <select id="issueCategory">
+                            <option value="">--Select--</option>
+                            <option value="flatTire">Flat Tire</option>
+                            <option value="engineTrouble">Engine Trouble</option>
+                            <option value="batteryFailure">Battery failure</option>
+                            <option value="overheating">Overheating</option>
+                            <option value="electricalIssue">Electrical issues</option>
+                            <option value="lockOut">Lockout (keys locked inside the vehicle)</option>
+                            <option value="fuelRelatedIssues">Fuel-related issues</option>
+                            <option value="transmissionProblems">Transmission problems</option>
+                            <option value="brakeIssues">Brake issues</option>
+                            <option value="suspensionProblems">Suspension problems</option>
+                            </select>
+                        <label for="additionalDetails">Additional Details:</label>
+                        <textarea id="additionalDetails" rows="4" cols="40"></textarea>
+                    </div>
+                    <div class="option">
+                        <label for="location">Location (Optional):</label>
+                        <input type="text" id="location">
+                    </div>
+                    <div class="option">
+                        <label for="urgencyLevel">Urgency Level:</label>
+                        <select id="urgencyLevel">
+                            <option value="Standard">Standard</option>
+                            <option value="Emergency">Emergency</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="request-submit" id="request">Confirm Order</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="centre">
+                <p>Chat With Us?</p>
+            </div>
+            <div class="upper-footer">
+                <div class="flx left">
+                    <p>Home</p>
+                    <p>Become an AutoWorld Mechanic</p>
+                    <p>Request a Mechanic</p>
+                    <p>Refer a friend</p>
+                    <p>FAQ</p>
+                </div>
+                <div class="flx cent">
+                    <p>Out Of Fuel?</p>
+                    <p>Need a Towing Car?</p>
+                    <p>Home Car Servicing?</p>
+                </div>
+                <div class="flx right">
+                    <p>Majesty Road,Amamorley-Accra</p>
+                    <p>Autoworld@gmail.com</p>
+                    <p>233(0)592548849</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="cc-reserved centre">&#169;Copyright. All rights reserved.</div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="Autoworld.js"></script>
+</body>
+</html>

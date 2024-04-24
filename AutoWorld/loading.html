@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>glowing loader ring animation</title>
+  <link rel="stylesheet" href="loading.css">
+  <style media="screen">
+  </style>
+</head>
+<body>
+	<div id="nearby">
+		Finding nearby mechanics ...
+	</div>
+	<div id="progress">
+		<div id="progress-value"></div>
+	</div>
+	<div id="ring">
+		<div id="stats">Searching</div>
+		<span id="span"></span>
+	</div>
+	<div id="availableMechanic">
+		<div id="mechanicName">
+			Ubers Auto Works
+		</div>
+		<div id="available">
+			is available!
+		</div>
+	</div>
+	<div id="distanceAway">
+		<div id="distance">5km away</div>
+		<div id="time">6 minutes</div>
+	</div>
+	<div id="hiddenDiv">
+		<button id="button" onclick="confirmOrder()">Confirm Order</button>
+	</div>
+
+	<script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('hiddenDiv').style.display = 'block'; // Make the div appear
+                document.getElementById('stats').style.display = 'none'; // Make the div appear
+                document.getElementById('availableMechanic').style.display = 'block'; // Make the div appear
+                document.getElementById('mechanicName').style.display = 'block'; // Make the div appear
+                document.getElementById('available').style.display = 'block'; // Make the div appear
+                document.getElementById('distanceAway').style.display = 'block'; // Make the div appear
+            }, 7000); // 60000 milliseconds = 1 minute
+        };
+
+		function confirmOrder() {
+			document.getElementById('mechanicName').innerHTML = "Order confirmed!";
+			document.getElementById('available').innerHTML = "Mechanic is on the way.";
+			document.getElementById('time').innerHTML = "Our experts will get your car running in no time!";
+			document.getElementById('distance').innerHTML = " ";
+			document.getElementById('nearby').innerHTML = '<a href=AutoWorldHome.html>Track Your Mechanic</a>';
+			document.getElementById('progress').style.display = 'none';
+			document.getElementById('span').style.display = 'none';
+			document.getElementById('ring').style.borderTopColor = '#fff000';
+			document.getElementById('ring').style.borderRightColor = '#fff000';
+			document.getElementById('ring').style.borderLeftColor = '#fff000';
+			document.getElementById('ring').style.borderBottomColor = '#fff000';
+			document.getElementById('button').style.display = 'none';
+    	};
+    </script>
+</body>
+</html>
+ 

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 50px 0 0 0;
+    padding: 50px 0 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.all-in {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.favicon img {
+   width: 100px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #15171a;
+}
+
+#signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"],
+button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width:96%;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.social-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.social-button.google {
+    background-color: #db4437;
+}
+
+.social-button.facebook {
+    background-color: #3b5998;
+}
+
+.signup-link {
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
